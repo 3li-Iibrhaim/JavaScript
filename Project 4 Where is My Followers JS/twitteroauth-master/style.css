@@ -1,0 +1,182 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+  position: relative;
+  left: 210px;
+  bottom: 170px;
+  width: 70%;
+  height: 70%;
+}
+
+#say{
+
+/* position: absolute; */
+/* bottom: 50px; */
+left: 310px;
+text-align: center;
+color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+#inter{
+  position: relative;
+  bottom: 140px;
+  /* left: 310px; */
+  text-align: center;
+}
+/* 
+   * Optional: Makes the sample page fill the window. 
+   */
+html,
+body {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+
+  background: #222;
+  /* background-image: url('https://source.unsplash.com/1600x900/?landscape'); */
+  background-image: url("Geographic-Segmentation.jpg");
+  font-size: 120%;
+}
+#shar{
+  position: inherit;
+  margin: 10px;
+  top: 400px;
+  left: 100px;
+}
+/* .button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+} */
+
+
+.cf:before, .cf:after{
+  content:"";
+  display:table;
+}
+
+.cf:after{
+  clear:both;
+}
+
+.cf{
+  zoom:1;
+} 
+
+/* Form wrapper styling */
+.form-wrapper {
+  width: 450px;
+  padding: 15px;
+  margin: 150px auto 50px auto;
+  background: #444;
+  background: rgba(0,0,0,.2);
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+  width: 330px;
+  height: 40px;
+  padding: 10px 5px;
+  float: left;    
+  font: bold 20px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  border: 0;
+  
+  background: #eee;
+  border-radius: 3px 0 0 3px;   
+  font-family: 'Comic Neue', cursive;   
+}
+
+.form-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+ color: #999;
+ font-weight: normal;
+ font-style: italic;
+}
+
+.form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}    
+
+/* Form submit button */
+.form-wrapper button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 110px;
+  font: bold 25px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  font-family: 'Comic Neue', cursive;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #d83c3c;
+  border-radius: 0 3px 3px 0;      
+  text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}   
+
+.form-wrapper button:hover{		
+  background: #e54040;
+}	
+
+.form-wrapper button:active,
+.form-wrapper button:focus{   
+  background: #c42f2f;
+outline: 0;   
+}
+
+.form-wrapper button:before { /* left arrow */
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent #d83c3c transparent;
+  top: 12px;
+  left: -6px;
+}
+
+.form-wrapper button:hover:before{
+  border-right-color: #e54040;
+}
+
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+      border-right-color: #c42f2f;
+}      
+
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}

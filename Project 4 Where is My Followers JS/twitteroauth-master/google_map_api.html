@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>Simple Map</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div id="say">
+    <h1>
+      Where are my Followers
+    </h1>
+    <!-- <input id = 'inter' type="text" placeholder="A red placeholder text..">
+  <button class="button">Green</button> -->
+
+  </div>
+  <div id='inter'>
+    <form class="form-wrapper cf" onsubmit="return false">
+      <input id='name' type="text" placeholder="Search here..." required>
+      <button type="submit" onclick="UserAction()">Search</button>
+    </form>
+  </div>
+
+  <div id="map"></div>
+
+
+      <div id = "shar">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v14.0" nonce="DDGCYtk4"></script>
+        <div class="fb-share-button" data-href="https://www.google.com/maps/@15.6172288,32.5320704,13z"
+            data-layout="button_count" data-size="small">
+            <a target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                class="fb-xfbml-parse-ignore">مشاركة</a>
+        </div>
+
+    </div>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALZx491f-8-r4dmOO8BcAyjP3iFFr_agw&callback=initMap&v=weekly"
+    defer></script>
+
+    <!-- Face book api -->
+    <script>
+      window.fbAsyncInit = function() {
+          FB.init({
+              appId: '3299260220400476',
+              autoLogAppEvents: true,
+              xfbml: true,
+              version: 'v14.0'
+          });
+      };
+
+
+      (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {
+              return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <!-- facebook api -->
+</body>
+
+</html>
