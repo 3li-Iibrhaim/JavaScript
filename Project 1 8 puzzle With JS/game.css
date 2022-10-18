@@ -1,0 +1,102 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    text-align: center;
+    color: rgb(128, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(128, 0, 0);
+    font-family: cursive;
+    font-size: 32px;
+}
+
+#wincount {
+    text-align: center;
+    color: rgb(128, 0, 0);
+    font-family: cursive;
+    font-size: 32px;
+    position: fixed; 
+    top: 140px;
+    left: 890px;
+}
+
+#counter {
+    text-align: center;
+    color: rgb(128, 0, 0);
+    font-family: cursive;
+    font-size: 32px;
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    left: 750px;
+}
+
+.button:hover {
+    background-color: rgb(205, 133, 63);
+    color: burlywood;
+}
+
+button {
+
+    display: inline-block;
+    position: relative;
+    top: 228px;
+    left: 280px;
+    background-color: rgb(218, 165, 32);
+    color: rgb(139, 69, 19);
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 3px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.grid {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 450px;
+    margin-top: 30px;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+}
+
+div>div:hover {
+    background-color: rgb(205, 133, 63);
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(205, 133, 63);
+}
+
+div>div {
+    color: rgb(139, 69, 19);
+    text-align: center;
+    font-size: 88px;
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 3px;
+    padding: 12px;
+    background-color: rgb(218, 165, 32);
+    transition: background-color 1s ease-out 100ms;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#cursor {
+    background-color: rgb(139, 69, 19);
+}

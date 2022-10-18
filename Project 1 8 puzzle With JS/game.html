@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ali Puzzle</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+</head>
+
+<body onload="randomNumber();">
+    <h1>Sust Wep Project</h1>
+    <h2>Puzzle Game</h2>
+    <!-- make 3X3 cell by div tag -->
+    <div class='grid'>
+        <div id='one'   class='num' onclick="move(this.id);"></div>
+        <div id='two'   class='num' onclick="move(this.id);"></div>
+        <div id='three' class='num' onclick="move(this.id);"></div>
+        <div id='four'  class='num' onclick="move(this.id);"></div>
+        <div id='five'  class='num' onclick="move(this.id);"></div>
+        <div id='six'   class='num' onclick="move(this.id);"></div>
+        <div id='seven' class='num' onclick="move(this.id);"></div>
+        <div id='eight' class='num' onclick="move(this.id);"></div>
+
+        <div id='cursor' class='num' onclick=""></div>
+    </div>
+    <button class="button" onclick="location.reload(); ">Shuffle</button>
+    <h3 id='counter'>move:0</h3>
+    <h3 id='wincount'>win:0</h3>
+
+</body>
+
+</html>
