@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>Your Website Title</title>
+    <meta property="og:title" content="Your title here" />
+    <meta property="og:description" content="your description here" />
+</head>
+
+<body>
+    
+<script>
+    FB.ui(
+        {
+            method: 'share',
+            href: 'your_url',     // The same than link in feed method
+            title: 'your_title',  // The same than name in feed method
+            picture: 'path_to_your_picture',  
+            caption: 'your_caption',  
+            description: 'your_description',
+         },
+         function(response){
+            // your code to manage the response
+         });
+</script>
+
+</body>
+
+</html>
