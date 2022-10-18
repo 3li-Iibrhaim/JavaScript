@@ -167,7 +167,6 @@ CREATE TABLE `users` (
   `Occupation` varchar(50) NOT NULL,
   `user` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 --
 -- Dumping data for table `users`
 --
